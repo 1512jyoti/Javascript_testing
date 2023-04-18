@@ -1,0 +1,47 @@
+<html lang="en">
+
+<body>
+    <script>
+        const arr=[4,6,8,9,10,23,30];
+        
+        let len= arr.length;
+         let total = 0;
+         let max = arr[0];
+         let min = arr[0];
+          let arrNew=[]; 
+        for(let i=0; i<len; i++){
+             //total finding
+            total += arr[i];
+
+
+            if(arr[i]>max){
+                max=arr[i];
+
+            }
+            else{
+                min=arr[i];
+            }
+           
+            //reverse array
+           //arrNew.push(arr[len-i-1]);
+           arrNew +=arr[len-i-1];
+
+
+            // //total finding
+            // total += arr[i];
+            
+        }
+         
+        let avg = total/len;
+        console.log("max : " + max);
+        console.log("min: "+ min);
+        console.log( "reverse of an array: "+arrNew);
+        console.log( "average : "+  avg);
+    
+</script>
+
+
+
+
+</body>
+</html>
